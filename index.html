@@ -13,7 +13,7 @@
 GOOGLE FONTS
 =========================================================== -->
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Ovo&family=Amiri:wght@400;700&family=Alex+Brush&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Aref+Ruqaa:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Markazi+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Ovo&family=Amiri:wght@400;700&family=Alex+Brush&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -54,7 +54,7 @@ scroll-behavior:smooth;
 
 body{
 
-background:var(--paper);
+background:var(--cream);
 
 font-family:'Cormorant Garamond',Georgia,serif;
 
@@ -97,8 +97,6 @@ position:relative;
 .rtl{
 
 direction:rtl;
-
-font-family:'Noto Naskh Arabic','Markazi Text',serif;
 
 }
 
@@ -317,8 +315,6 @@ OPENING QURAN + INVITATION SECTION
 
 padding-top:64px;
 
-background:var(--paper) url("https://static.tildacdn.net/tild6638-3365-4663-b834-363436333136/noroot.png") center top / cover no-repeat;
-
 }
 
 .invitationCard{
@@ -332,7 +328,10 @@ text-align:center;
 }
 
 .paperTextureCard{
-    background:none;
+    background-image: url("https://static.tildacdn.net/tild6638-3365-4663-b834-363436333136/noroot.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+background-size: 200% 200%;
 }
 
 .paperTextureCard:last-of-type{
@@ -393,8 +392,6 @@ font-size:26px;
 
 color:var(--brown);
 
-font-family:'Noto Naskh Arabic',serif;
-
 }
 
 .invitationText h2{
@@ -403,13 +400,11 @@ margin:14px 0;
 
 font-size:44px;
 
-font-weight:700;
+font-weight:600;
 
 color:var(--gold);
 
-font-family:'Aref Ruqaa',serif;
-
-letter-spacing:.02em;
+font-family:'Amiri',serif;
 
 }
 
@@ -419,13 +414,11 @@ margin:20px 0;
 
 font-size:38px;
 
-font-weight:700;
+font-weight:600;
 
 color:var(--gold);
 
-font-family:'Aref Ruqaa',serif;
-
-letter-spacing:.02em;
+font-family:'Amiri',serif;
 
 }
 
@@ -433,11 +426,9 @@ letter-spacing:.02em;
 
 font-size:21px;
 
-line-height:2;
+line-height:1.9;
 
 color:var(--brown);
-
-font-family:'Noto Naskh Arabic',serif;
 
 }
 
@@ -537,9 +528,7 @@ margin:0 auto 6px;
 
 .eyebrow{
 
-font-family:'Aref Ruqaa',serif;
-
-font-weight:700;
+font-family:'Alex Brush',cursive;
 
 font-size:38px;
 
@@ -601,9 +590,9 @@ line-height:1.4;
 
 .scrollText{
 
-font-family:'Aref Ruqaa',serif;
+font-family:'Alex Brush',cursive;
 
-font-size:22px;
+font-size:24px;
 
 color:var(--brown-soft);
 
@@ -757,13 +746,11 @@ margin-bottom:22px;
 
 .verseTitle{
 
-font-family:'Aref Ruqaa',serif;
+font-family:'Alex Brush',cursive;
 
-font-weight:700;
+font-size:34px;
 
-font-size:32px;
-
-line-height:1.8;
+line-height:1.7;
 
 color:var(--gold);
 
@@ -773,11 +760,9 @@ margin-bottom:30px;
 
 .welcomeText{
 
-font-family:'Noto Naskh Arabic',serif;
-
 font-size:20px;
 
-line-height:2;
+line-height:1.9;
 
 max-width:520px;
 
@@ -823,14 +808,39 @@ max-width:600px;
 
 margin:0 auto;
 
+padding-top:26px;
+
+}
+
+.tornCard::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+right:0;
+
+height:30px;
+
+background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 34'><path d='M0,34 L0,18 L8,23 L14,11 L22,21 L30,9 L38,19 L46,7 L54,17 L60,11 L60,34 Z' fill='%23f3e8d0'/></svg>");
+
+background-repeat:repeat-x;
+
+background-size:60px 30px;
+
 }
 
 .tornInner{
 
-background:url("https://static.tildacdn.net/tild6638-3365-4663-b834-363436333136/noroot.png") center top / 200% 200% no-repeat;
+background:var(--paper);
 
 padding:14px 36px 50px;
 
+box-shadow:0 14px 40px rgba(108,81,63,.18);
 
 }
 
@@ -850,7 +860,7 @@ max-width:600px;
 
 margin:0 auto;
 
-background:none;
+background:var(--paper);
 
 border:1px solid rgba(166,125,43,.4);
 
@@ -884,11 +894,11 @@ margin-bottom:6px;
 
 .dateLine{
 
-font-family:'Aref Ruqaa',serif;
+font-family:'Cinzel',serif;
 
-font-size:17px;
+font-size:15px;
 
-letter-spacing:.1em;
+letter-spacing:.22em;
 
 color:var(--gold);
 
@@ -958,11 +968,9 @@ color:var(--gold-light);
 
 .storyText{
 
-font-family:'Noto Naskh Arabic',serif;
-
 font-size:19px;
 
-line-height:2.1;
+line-height:1.95;
 
 color:var(--brown);
 
@@ -980,52 +988,11 @@ margin-left:calc(50% - 50vw);
 
 overflow:hidden;
 
-position:relative;
-
-padding:34px 0;
-
-background:#0d0d0d;
+padding:30px 0 10px;
 
 -webkit-mask-image:linear-gradient(to right,transparent,#000 6%,#000 94%,transparent);
 
 mask-image:linear-gradient(to right,transparent,#000 6%,#000 94%,transparent);
-
-}
-
-.photoStrip::before,
-.photoStrip::after{
-
-content:"";
-
-position:absolute;
-
-left:0;
-
-right:0;
-
-height:14px;
-
-background-image:radial-gradient(circle,var(--paper) 3.4px,transparent 3.6px);
-
-background-size:26px 14px;
-
-background-position:10px center;
-
-background-repeat:repeat-x;
-
-opacity:.92;
-
-}
-
-.photoStrip::before{
-
-top:9px;
-
-}
-
-.photoStrip::after{
-
-bottom:9px;
 
 }
 
@@ -1041,10 +1008,6 @@ width:max-content;
 
 animation:stripScroll 34s linear infinite;
 
-position:relative;
-
-z-index:1;
-
 }
 
 .photoStripTrack img{
@@ -1053,19 +1016,25 @@ height:230px;
 
 width:auto;
 
-border-radius:2px;
+border-radius:4px;
 
-box-shadow:0 10px 26px rgba(0,0,0,.5);
+box-shadow:0 10px 26px rgba(0,0,0,.35);
 
-border:5px solid #111;
-
-outline:1px solid rgba(230,201,118,.45);
-
-outline-offset:-2px;
+border:3px solid var(--paper);
 
 flex-shrink:0;
 
-filter:sepia(.14) contrast(1.04) saturate(1.03);
+}
+
+.photoStripTrack img:nth-child(even){
+
+transform:rotate(1.4deg);
+
+}
+
+.photoStripTrack img:nth-child(odd){
+
+transform:rotate(-1.4deg);
 
 }
 
@@ -1097,17 +1066,15 @@ position:relative;
 
 .sectionTitle{
 
-font-family:'Aref Ruqaa',serif;
+font-family:'Alex Brush',cursive;
 
-font-weight:700;
+font-weight:400;
 
-font-size:40px;
+font-size:38px;
 
 color:var(--gold);
 
 margin-bottom:30px;
-
-text-shadow:0 2px 10px rgba(220,182,79,.25);
 
 }
 
@@ -1118,20 +1085,6 @@ width:70px;
 margin:0 auto 20px;
 
 opacity:.9;
-
-}
-
-.countdownGlass{
-
-display:inline-block;
-
-padding:26px 22px;
-
-border-radius:14px;
-
-background:url("https://static.tildacdn.net/tild6638-3365-4663-b834-363436333136/noroot.png") center top / 200% 200% no-repeat;
-
-box-shadow:0 10px 30px rgba(0,0,0,.2);
 
 }
 
@@ -1239,11 +1192,9 @@ right:6px;
 
 .locationName{
 
-font-family:'Aref Ruqaa',serif;
+font-family:'Cinzel',serif;
 
-font-weight:700;
-
-font-size:26px;
+font-size:23px;
 
 color:var(--wine);
 
@@ -1253,11 +1204,9 @@ margin-bottom:8px;
 
 .locationAddress{
 
-font-family:'Noto Naskh Arabic',serif;
-
 font-size:19px;
 
-line-height:1.9;
+line-height:1.7;
 
 max-width:420px;
 
@@ -1269,31 +1218,9 @@ color:var(--brown-soft);
 
 .venuePhoto{
 
-display:flex;
-
-flex-direction:row;
-
-justify-content:center;
-
-align-items:stretch;
-
-gap:14px;
-
-max-width:600px;
+max-width:360px;
 
 margin:0 auto 30px;
-
-}
-
-.venuePhoto img{
-
-width:calc(50% - 7px);
-
-height:100%;
-
-object-fit:cover;
-
-display:block;
 
 border:3px solid var(--paper);
 
@@ -1301,13 +1228,11 @@ box-shadow:0 14px 34px rgba(0,0,0,.35);
 
 }
 
-@media(max-width:520px){
+.venuePhoto img{
 
-.venuePhoto{
+width:100%;
 
-max-width:360px;
-
-}
+display:block;
 
 }
 
@@ -1461,98 +1386,6 @@ padding:52px 0;
 
 }
 
-.flowerRow{
-
-margin-top:0 !important;
-
-gap:30px !important;
-
-}
-
-.flowerRow img{
-
-width:100px !important;
-
-}
-
-#verseSection .wrap{
-
-top:0 !important;
-
-}
-
-#verseSection .tornInner{
-
-top:0 !important;
-
-}
-
-#verseSection .tornInner > div:first-of-type{
-
-flex-wrap:wrap !important;
-
-gap:10px !important;
-
-}
-
-.sideDecor{
-
-width:55px !important;
-
-}
-
-#storySection .wrap{
-
-top:0 !important;
-
-}
-
-#storySection .dateLine,
-#storySection .photoPlaceholder,
-#storySection .storyText{
-
-top:0 !important;
-
-}
-
-#countdownSection{
-
-top:0 !important;
-
-}
-
-#weddingDaySection .wrap{
-
-top:0 !important;
-
-}
-
-#weddingDaySection .dateLine,
-#weddingDaySection .photoPlaceholder,
-#weddingDaySection .storyText{
-
-top:0 !important;
-
-}
-
-#locationSection .wrap{
-
-top:0 !important;
-
-}
-
-#memoriesSection{
-
-top:0 !important;
-
-}
-
-footer{
-
-top:0 !important;
-
-}
-
 .quranVerse{
 
 font-size:26px;
@@ -1631,523 +1464,6 @@ font-size:30px;
 
 }
 
-}
-
-
-/* ===========================================================
-   MOBILE FIX — تحسين عرض الدعوة على الهاتف
-   =========================================================== */
-
-html, body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-body {
-    min-width: 0;
-}
-
-.wrap {
-    width: 100%;
-    max-width: 760px;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-/* منع الـ negative positioning من كسر ترتيب الأقسام على الهاتف */
-@media (max-width: 600px) {
-
-    section {
-        width: 100%;
-        padding: 44px 0;
-        position: relative;
-    }
-
-    /* الغلاف */
-    #openingOverlay {
-        padding: 20px;
-    }
-
-    .envelope {
-        width: min(88vw, 390px);
-        max-width: 100%;
-    }
-
-    .tapBlock {
-        bottom: 13%;
-        width: 100%;
-        text-align: center;
-    }
-
-    .tapText {
-        font-size: 11px;
-        letter-spacing: .12em;
-        white-space: normal;
-    }
-
-    /* فيديو المقدمة */
-    #introVideoContainer {
-        padding: 0;
-    }
-
-    #introVideo {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-
-    /* القسم الافتتاحي */
-    #openingSection {
-        padding-top: 42px;
-        padding-bottom: 48px;
-        background-size: cover;
-    }
-
-    .invitationCard {
-        width: 100%;
-    }
-
-    .bismillahLine {
-        font-size: 21px;
-        margin-bottom: 25px;
-    }
-
-    .quranVerse {
-        font-size: 24px;
-        line-height: 2;
-        padding: 0 4px;
-    }
-
-    .quranVerse small {
-        font-size: 13px;
-        margin-top: 14px;
-    }
-
-    .invitationText {
-        margin-top: 55px;
-        padding: 0 4px;
-    }
-
-    .invitationText .host {
-        font-size: 21px;
-    }
-
-    .invitationText h2 {
-        font-size: 31px;
-        line-height: 1.6;
-        margin: 10px 0;
-    }
-
-    .invitationText h3 {
-        font-size: 27px;
-        line-height: 1.6;
-        margin: 14px 0;
-    }
-
-    .invitationText p {
-        font-size: 17px;
-        line-height: 2;
-    }
-
-    /* زر الصوت */
-    #audioToggle {
-        width: 50px;
-        height: 50px;
-        right: 14px;
-        bottom: 14px;
-    }
-
-    /* Hero */
-    .hero {
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-
-    .heroTopDecoration img {
-        width: 100px;
-    }
-
-    .eyebrow {
-        font-size: 28px;
-        line-height: 1.5;
-    }
-
-    .heroDate {
-        font-size: 17px;
-        letter-spacing: .08em;
-        margin-bottom: 24px;
-    }
-
-    .heroNames {
-        font-size: 48px;
-        line-height: 1.3;
-        margin-bottom: 16px;
-    }
-
-    .heroNames .and {
-        font-size: 28px;
-    }
-
-    .scrollText {
-        font-size: 19px;
-        margin-top: 20px;
-    }
-
-    .scrollChevron {
-        width: 18px;
-        margin-top: 8px;
-    }
-
-    .swansVideoWrap {
-        width: 100%;
-        max-width: 390px;
-        margin: 28px auto 0;
-        border-radius: 6px;
-    }
-
-    .swanMonogram {
-        gap: 5px;
-    }
-
-    .swanMonogram .monoLetter {
-        font-size: 31px;
-    }
-
-    .swanMonogram .monoIcon {
-        width: 38px;
-    }
-
-    .flowerRow {
-        width: 100% !important;
-        margin-top: 4px !important;
-        gap: 8px !important;
-        padding: 0 8px;
-        position: relative;
-        z-index: 2;
-    }
-
-    .flowerRow img {
-        width: min(42vw, 150px) !important;
-        max-width: 150px;
-        height: auto;
-    }
-
-    /* قسم الأبيات */
-    #verseSection {
-        top: 0 !important;
-        padding-top: 25px;
-        padding-bottom: 45px;
-    }
-
-    #verseSection .wrap {
-        top: 0 !important;
-    }
-
-    #verseSection .tornCard {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    #verseSection .tornInner {
-        top: 0 !important;
-        padding: 24px 14px 34px;
-    }
-
-    #verseSection .tornInner > div:first-of-type {
-        flex-wrap: nowrap !important;
-        gap: 8px !important;
-        margin-bottom: 15px;
-    }
-
-    #verseSection .sideDecor {
-        position: static !important;
-        width: 55px !important;
-        min-width: 55px;
-        transform: none !important;
-    }
-
-    #verseSection .bismillah {
-        margin: 0 !important;
-        font-size: 20px;
-        flex: 1;
-    }
-
-    .verseTitle {
-        font-size: 25px;
-        line-height: 1.9;
-        margin-bottom: 22px;
-    }
-
-    .welcomeText {
-        font-size: 17px;
-        line-height: 2;
-        max-width: 100%;
-    }
-
-    /* البطاقات */
-    #storySection,
-    #weddingDaySection,
-    #locationSection,
-    #memoriesSection {
-        top: 0 !important;
-    }
-
-    #storySection .wrap,
-    #weddingDaySection .wrap,
-    #locationSection .wrap {
-        top: 0 !important;
-    }
-
-    .paperSection {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-
-    .tornInner {
-        padding: 18px 16px 32px;
-    }
-
-    #storySection .dateLine,
-    #storySection .photoPlaceholder,
-    #storySection .storyText,
-    #weddingDaySection .dateLine,
-    #weddingDaySection .photoPlaceholder,
-    #weddingDaySection .storyText {
-        top: 0 !important;
-    }
-
-    .sectionTitle {
-        font-size: 30px;
-        line-height: 1.5;
-        margin-bottom: 22px;
-    }
-
-    .dateLine {
-        font-size: 16px;
-        line-height: 1.8;
-        margin-bottom: 22px;
-    }
-
-    .photoPlaceholder {
-        width: min(100%, 280px);
-        margin-bottom: 22px;
-    }
-
-    .storyText {
-        font-size: 17px;
-        line-height: 2;
-    }
-
-    /* العد التنازلي */
-    #countdownSection {
-        top: 0 !important;
-        padding-top: 42px;
-        padding-bottom: 42px;
-    }
-
-    /* إلغاء section المتداخلة بصرياً */
-    #countdownSection > section {
-        padding: 0;
-        width: 100%;
-    }
-
-    .royalCrown {
-        font-size: 48px;
-        line-height: 1;
-    }
-
-    .countdownGlass {
-        width: 100%;
-        max-width: 360px;
-        padding: 20px 10px;
-        border-radius: 12px;
-    }
-
-    #countdown {
-        width: 100%;
-        gap: 0;
-        justify-content: space-between;
-    }
-
-    .countItem {
-        min-width: 0;
-        width: 23%;
-    }
-
-    .countNumber {
-        font-size: 30px !important;
-        line-height: 1.1;
-    }
-
-    .countLabel {
-        font-size: 9px;
-        margin-top: 6px;
-        letter-spacing: .03em;
-    }
-
-    .separator {
-        font-size: 24px;
-        margin-top: -12px;
-        flex: 0 0 auto;
-    }
-
-    .numberGlass {
-        min-width: 0;
-    }
-
-    /* الموقع */
-    #locationSection {
-        padding-top: 42px;
-    }
-
-    .cornerDecor {
-        width: 42px;
-    }
-
-    .cornerDecor.leftTop {
-        left: 2px;
-        top: 0;
-    }
-
-    .cornerDecor.rightBottom {
-        right: 2px;
-        bottom: 0;
-    }
-
-    .locationName {
-        font-size: 23px;
-    }
-
-    .locationAddress {
-        font-size: 17px;
-        line-height: 1.8;
-        margin-bottom: 22px;
-    }
-
-    .venuePhoto {
-        width: 100%;
-        max-width: 360px;
-        gap: 8px;
-        align-items: stretch;
-        margin-bottom: 22px;
-    }
-
-    .venuePhoto img {
-        width: calc(50% - 4px);
-        height: 150px;
-        object-fit: cover;
-        border-width: 2px;
-    }
-
-    .mapWrapper,
-    #locationSection > .wrap > div[style*="height: 450px"] {
-        width: 100% !important;
-        max-width: 100% !important;
-        height: 300px !important;
-        margin-top: 20px !important;
-        border-radius: 14px !important;
-    }
-
-    /* الذكريات */
-    #memoriesSection {
-        padding-top: 35px;
-        padding-bottom: 35px;
-    }
-
-    #memoriesSection .wrap {
-        top: 0 !important;
-    }
-
-    .photoStrip {
-        width: 100vw;
-        margin-left: calc(50% - 50vw);
-        padding: 27px 0;
-    }
-
-    .photoStripTrack {
-        gap: 10px;
-        animation-duration: 28s;
-    }
-
-    .photoStripTrack img {
-        height: 165px;
-        border-width: 4px;
-    }
-
-    /* الفوتر */
-    footer {
-        top: 0 !important;
-        padding: 42px 0 35px;
-    }
-
-    footer p {
-        font-size: 14px;
-        letter-spacing: .22em;
-    }
-
-    .footerOrnament {
-        width: 75px;
-    }
-}
-
-/* هواتف صغيرة جداً */
-@media (max-width: 380px) {
-
-    .wrap {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    .quranVerse {
-        font-size: 21px;
-    }
-
-    .invitationText h2 {
-        font-size: 27px;
-    }
-
-    .invitationText h3 {
-        font-size: 24px;
-    }
-
-    .heroNames {
-        font-size: 42px;
-    }
-
-    .verseTitle {
-        font-size: 22px;
-    }
-
-    #verseSection .sideDecor {
-        width: 46px !important;
-        min-width: 46px;
-    }
-
-    .countdownGlass {
-        padding-left: 6px;
-        padding-right: 6px;
-    }
-
-    .countNumber {
-        font-size: 26px !important;
-    }
-
-    .separator {
-        font-size: 20px;
-    }
-
-    .countLabel {
-        font-size: 8px;
-    }
-
-    .venuePhoto img {
-        height: 125px;
-    }
-
-    .photoStripTrack img {
-        height: 145px;
-    }
 }
 
 </style>
@@ -2307,7 +1623,7 @@ after the intro video ends, instead of a temporary popup screen)
 
                 <h2>
 
-                    عبد الباقي سهام السوداني
+                    عبد الباقي سهام
 
                 </h2>
 
@@ -2319,7 +1635,7 @@ after the intro video ends, instead of a temporary popup screen)
 
                 <h3>
 
-                    علي عبد الباقي سهام السوداني
+                    علي عبد الباقي سهام
 
                 </h3>
 
@@ -2385,18 +1701,6 @@ HERO SECTION
 
     </svg>
 
-     <svg
-        class="scrollChevron reveal"
-        viewBox="0 0 25 15.86">
-
-        <path
-        fill="none"
-        stroke="#937100"
-        stroke-width="1"
-        stroke-linecap="round"
-        d="M1.0092 1.008C4.3691 5.4431 9.1402 9.565 12.5 14C16.8007 9.565 19.6901 5.4431 23.9908 1.008"/>
-
-    </svg>
     <div class="swansVideoWrap reveal">
 
         <video
@@ -2460,27 +1764,30 @@ VERSES / PRAYER SECTION
 <section id="verseSection">
 
     <!-- Left Decoration -->
-     
+
+   
+
     <div class="wrap" style="position:relative; top:-260px;">
 
         <div class="tornCard reveal">
 
-<div class="tornInner" style="position:relative; top:-30px;">
+            <div class="tornInner">
+
                 <div style="display:flex;align-items:center;justify-content:center;gap:25px;">
 
     <img
         class="sideDecor left"
         src="https://static.tildacdn.net/tild3638-3336-4136-a131-633463346265/left-element_1.png"
-        style="position:static;width:90px;height:auto;animation:breathe 0s ease-in-out infinite;transform:translateY(40px);">
+        style="position:static;width:90px;height:auto;animation:breathe 0s ease-in-out infinite;">
 
-    <div class="bismillah rtl" style="margin-top:90px;">
-       
-ابو الطيب المتنبي    </div>
+    <div class="bismillah rtl">
+        بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+    </div>
 
     <img
         class="sideDecor right"
         src="https://static.tildacdn.net/tild6131-6362-4663-b461-626531656438/right-element_1.png"
-        style="position:static;width:90px;height:auto;animation:breathe 0s ease-in-out infinite;transform:translateY(40px);">
+        style="position:static;width:90px;height:auto;animation:breathe 0s ease-in-out infinite;">
 
 </div>
 
@@ -2490,19 +1797,14 @@ VERSES / PRAYER SECTION
     50%{transform:scale(1.08);}
 }
 </style>
-<div class="verseTitle rtl ">
-«لِعَينَيكِ ما يَلقى الفُؤادُ وَما لَقي<br>
 
-وَلِلحُبِّ ما لَم يَبقَ مِنّي وَما بَقي»
-
-</div>
                 <div class="verseTitle rtl">
 
-                   روحان جمعهما الله<br>
+                    روحان توأم<br>
 
-                    وقلبان اختارا الأبد<br>
+                    ومصير واحد<br>
 
-                    وحكايةٌ كُتبت بالحب لتُتوَّج بليلة العمر
+                    وعمر كتبه الله لنا
 
                 </div>
 
@@ -2546,7 +1848,7 @@ Nikkah / contract date here)
 
             <div class="tornInner">
 
-<div class="dateLine rtl" style="position:relative; top:40px;">
+                <div class="dateLine rtl">
 
                     تم عقد قراننا بتاريخ 22 / 5 / 2026
 
@@ -2554,7 +1856,7 @@ Nikkah / contract date here)
 
                 <!-- الصورة تُقرأ تلقائياً من assets/Photo 1.jpg -->
 
-<div class="photoPlaceholder" style="position:relative; top:40px;">
+                <div class="photoPlaceholder">
 
                     <img src="assets/Photo 1.jpg" alt="صورة عقد القران" onerror="this.style.display='none'">
 
@@ -2566,7 +1868,7 @@ Nikkah / contract date here)
 
                 </div>
 
-                <p class="storyText rtl"style="position:relative; top:40px;">
+                <p class="storyText rtl">
 
                  لأن أجمل الأقدار هي التي تجمع قلبين،
 ولأن بعض الحكايات كُتبت لتدوم،
@@ -2806,6 +2108,17 @@ COUNTDOWN
     }
 
 }
+#countdownSection{
+
+    background-image: url("https://static.tildacdn.net/tild6638-3365-4663-b834-363436333136/noroot.png");
+
+    background-repeat: no-repeat;
+
+    background-position: center top;
+
+    background-size: contain;
+
+}
 .royalCrown{
 
     display:inline-block;
@@ -2840,7 +2153,6 @@ COUNTDOWN
 #countdownSection{
     position: relative;
     top: -240px;
-}
 </style>
 
 <!-- ===========================================================
@@ -2862,7 +2174,7 @@ WEDDING DAY
 
             <div class="tornInner">
 
-                <div class="dateLine rtl" style="position:relative; top:40px;">
+                <div class="dateLine rtl">
 
                     موعد العرس 02 / 10 / 2026
 
@@ -2870,7 +2182,7 @@ WEDDING DAY
 
                 <!-- الصورة تُقرأ تلقائياً من assets/Photo 2.jpg -->
 
-                <div class="photoPlaceholder" style="position:relative; top:40px;">
+                <div class="photoPlaceholder">
 
                     <img src="assets/Photo 2.jpg" alt="صورة العرس" onerror="this.style.display='none'">
 
@@ -2881,7 +2193,7 @@ WEDDING DAY
 
                 </div>
 
-                <p class="storyText rtl" style="position:relative; top:40px;">
+                <p class="storyText rtl">
 جمعنا القدر، وألف بين قلوبنا الحب،
 واليوم نبدأ معًا أجمل رحلة في العمر،
 رحلة عنوانها نحن. 🤍
@@ -2916,15 +2228,17 @@ LOCATION
 <div class="wrap" style="position: relative; top: -500px;">
 
     <h2 class="sectionTitle reveal">
-          قاعة سيندريلا
-
+        الموقع
     </h2>
 
     <p class="locationName reveal rtl">
+        قاعة سيندريلا
+    </p>
+
+    <p class="locationAddress reveal rtl">
         بغداد - حي الجامعة
     </p>
 
-    
     <div class="venuePhoto reveal">
 
         <img src="assets/photo 99.jpg" alt="قاعة سيلفي">
@@ -2973,6 +2287,22 @@ LOCATION
     </div>
 
 </div>
+
+        <div class="mapWrapper reveal">
+
+            <iframe
+
+            src="https://www.google.com/maps/place/Cinderella+wedding+Hall/@33.3152673,44.3216408,17z/data=!4m6!3m5!1s0x15577f0be5d5af09:0xbb61c7bcd1da6a8e!8m2!3d33.315261!4d44.3243935!16s%2Fg%2F11fkw93w60?entry=ttu&g_ep=EgoyMDI2MDkwOS4wIKXMDSoASAFQAw%3D%3D"
+
+            loading="lazy"
+
+            allowfullscreen>
+
+            </iframe>
+
+        </div>
+
+        
 
     </div>
 
@@ -3183,7 +2513,7 @@ play.style.display="block";
 };
 
 /* ==========================================
-COUNTDOWN — Wedding date: October 02, 2026
+COUNTDOWN — Wedding date: October 23, 2026
 ========================================== */
 
 const target=new Date("October 02, 2026 16:00:00");
