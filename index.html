@@ -1633,6 +1633,523 @@ font-size:30px;
 
 }
 
+
+/* ===========================================================
+   MOBILE FIX — تحسين عرض الدعوة على الهاتف
+   =========================================================== */
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    min-width: 0;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 760px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* منع الـ negative positioning من كسر ترتيب الأقسام على الهاتف */
+@media (max-width: 600px) {
+
+    section {
+        width: 100%;
+        padding: 44px 0;
+        position: relative;
+    }
+
+    /* الغلاف */
+    #openingOverlay {
+        padding: 20px;
+    }
+
+    .envelope {
+        width: min(88vw, 390px);
+        max-width: 100%;
+    }
+
+    .tapBlock {
+        bottom: 13%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tapText {
+        font-size: 11px;
+        letter-spacing: .12em;
+        white-space: normal;
+    }
+
+    /* فيديو المقدمة */
+    #introVideoContainer {
+        padding: 0;
+    }
+
+    #introVideo {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* القسم الافتتاحي */
+    #openingSection {
+        padding-top: 42px;
+        padding-bottom: 48px;
+        background-size: cover;
+    }
+
+    .invitationCard {
+        width: 100%;
+    }
+
+    .bismillahLine {
+        font-size: 21px;
+        margin-bottom: 25px;
+    }
+
+    .quranVerse {
+        font-size: 24px;
+        line-height: 2;
+        padding: 0 4px;
+    }
+
+    .quranVerse small {
+        font-size: 13px;
+        margin-top: 14px;
+    }
+
+    .invitationText {
+        margin-top: 55px;
+        padding: 0 4px;
+    }
+
+    .invitationText .host {
+        font-size: 21px;
+    }
+
+    .invitationText h2 {
+        font-size: 31px;
+        line-height: 1.6;
+        margin: 10px 0;
+    }
+
+    .invitationText h3 {
+        font-size: 27px;
+        line-height: 1.6;
+        margin: 14px 0;
+    }
+
+    .invitationText p {
+        font-size: 17px;
+        line-height: 2;
+    }
+
+    /* زر الصوت */
+    #audioToggle {
+        width: 50px;
+        height: 50px;
+        right: 14px;
+        bottom: 14px;
+    }
+
+    /* Hero */
+    .hero {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .heroTopDecoration img {
+        width: 100px;
+    }
+
+    .eyebrow {
+        font-size: 28px;
+        line-height: 1.5;
+    }
+
+    .heroDate {
+        font-size: 17px;
+        letter-spacing: .08em;
+        margin-bottom: 24px;
+    }
+
+    .heroNames {
+        font-size: 48px;
+        line-height: 1.3;
+        margin-bottom: 16px;
+    }
+
+    .heroNames .and {
+        font-size: 28px;
+    }
+
+    .scrollText {
+        font-size: 19px;
+        margin-top: 20px;
+    }
+
+    .scrollChevron {
+        width: 18px;
+        margin-top: 8px;
+    }
+
+    .swansVideoWrap {
+        width: 100%;
+        max-width: 390px;
+        margin: 28px auto 0;
+        border-radius: 6px;
+    }
+
+    .swanMonogram {
+        gap: 5px;
+    }
+
+    .swanMonogram .monoLetter {
+        font-size: 31px;
+    }
+
+    .swanMonogram .monoIcon {
+        width: 38px;
+    }
+
+    .flowerRow {
+        width: 100% !important;
+        margin-top: 4px !important;
+        gap: 8px !important;
+        padding: 0 8px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .flowerRow img {
+        width: min(42vw, 150px) !important;
+        max-width: 150px;
+        height: auto;
+    }
+
+    /* قسم الأبيات */
+    #verseSection {
+        top: 0 !important;
+        padding-top: 25px;
+        padding-bottom: 45px;
+    }
+
+    #verseSection .wrap {
+        top: 0 !important;
+    }
+
+    #verseSection .tornCard {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #verseSection .tornInner {
+        top: 0 !important;
+        padding: 24px 14px 34px;
+    }
+
+    #verseSection .tornInner > div:first-of-type {
+        flex-wrap: nowrap !important;
+        gap: 8px !important;
+        margin-bottom: 15px;
+    }
+
+    #verseSection .sideDecor {
+        position: static !important;
+        width: 55px !important;
+        min-width: 55px;
+        transform: none !important;
+    }
+
+    #verseSection .bismillah {
+        margin: 0 !important;
+        font-size: 20px;
+        flex: 1;
+    }
+
+    .verseTitle {
+        font-size: 25px;
+        line-height: 1.9;
+        margin-bottom: 22px;
+    }
+
+    .welcomeText {
+        font-size: 17px;
+        line-height: 2;
+        max-width: 100%;
+    }
+
+    /* البطاقات */
+    #storySection,
+    #weddingDaySection,
+    #locationSection,
+    #memoriesSection {
+        top: 0 !important;
+    }
+
+    #storySection .wrap,
+    #weddingDaySection .wrap,
+    #locationSection .wrap {
+        top: 0 !important;
+    }
+
+    .paperSection {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .tornInner {
+        padding: 18px 16px 32px;
+    }
+
+    #storySection .dateLine,
+    #storySection .photoPlaceholder,
+    #storySection .storyText,
+    #weddingDaySection .dateLine,
+    #weddingDaySection .photoPlaceholder,
+    #weddingDaySection .storyText {
+        top: 0 !important;
+    }
+
+    .sectionTitle {
+        font-size: 30px;
+        line-height: 1.5;
+        margin-bottom: 22px;
+    }
+
+    .dateLine {
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 22px;
+    }
+
+    .photoPlaceholder {
+        width: min(100%, 280px);
+        margin-bottom: 22px;
+    }
+
+    .storyText {
+        font-size: 17px;
+        line-height: 2;
+    }
+
+    /* العد التنازلي */
+    #countdownSection {
+        top: 0 !important;
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+
+    /* إلغاء section المتداخلة بصرياً */
+    #countdownSection > section {
+        padding: 0;
+        width: 100%;
+    }
+
+    .royalCrown {
+        font-size: 48px;
+        line-height: 1;
+    }
+
+    .countdownGlass {
+        width: 100%;
+        max-width: 360px;
+        padding: 20px 10px;
+        border-radius: 12px;
+    }
+
+    #countdown {
+        width: 100%;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .countItem {
+        min-width: 0;
+        width: 23%;
+    }
+
+    .countNumber {
+        font-size: 30px !important;
+        line-height: 1.1;
+    }
+
+    .countLabel {
+        font-size: 9px;
+        margin-top: 6px;
+        letter-spacing: .03em;
+    }
+
+    .separator {
+        font-size: 24px;
+        margin-top: -12px;
+        flex: 0 0 auto;
+    }
+
+    .numberGlass {
+        min-width: 0;
+    }
+
+    /* الموقع */
+    #locationSection {
+        padding-top: 42px;
+    }
+
+    .cornerDecor {
+        width: 42px;
+    }
+
+    .cornerDecor.leftTop {
+        left: 2px;
+        top: 0;
+    }
+
+    .cornerDecor.rightBottom {
+        right: 2px;
+        bottom: 0;
+    }
+
+    .locationName {
+        font-size: 23px;
+    }
+
+    .locationAddress {
+        font-size: 17px;
+        line-height: 1.8;
+        margin-bottom: 22px;
+    }
+
+    .venuePhoto {
+        width: 100%;
+        max-width: 360px;
+        gap: 8px;
+        align-items: stretch;
+        margin-bottom: 22px;
+    }
+
+    .venuePhoto img {
+        width: calc(50% - 4px);
+        height: 150px;
+        object-fit: cover;
+        border-width: 2px;
+    }
+
+    .mapWrapper,
+    #locationSection > .wrap > div[style*="height: 450px"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 300px !important;
+        margin-top: 20px !important;
+        border-radius: 14px !important;
+    }
+
+    /* الذكريات */
+    #memoriesSection {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    #memoriesSection .wrap {
+        top: 0 !important;
+    }
+
+    .photoStrip {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        padding: 27px 0;
+    }
+
+    .photoStripTrack {
+        gap: 10px;
+        animation-duration: 28s;
+    }
+
+    .photoStripTrack img {
+        height: 165px;
+        border-width: 4px;
+    }
+
+    /* الفوتر */
+    footer {
+        top: 0 !important;
+        padding: 42px 0 35px;
+    }
+
+    footer p {
+        font-size: 14px;
+        letter-spacing: .22em;
+    }
+
+    .footerOrnament {
+        width: 75px;
+    }
+}
+
+/* هواتف صغيرة جداً */
+@media (max-width: 380px) {
+
+    .wrap {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .quranVerse {
+        font-size: 21px;
+    }
+
+    .invitationText h2 {
+        font-size: 27px;
+    }
+
+    .invitationText h3 {
+        font-size: 24px;
+    }
+
+    .heroNames {
+        font-size: 42px;
+    }
+
+    .verseTitle {
+        font-size: 22px;
+    }
+
+    #verseSection .sideDecor {
+        width: 46px !important;
+        min-width: 46px;
+    }
+
+    .countdownGlass {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .countNumber {
+        font-size: 26px !important;
+    }
+
+    .separator {
+        font-size: 20px;
+    }
+
+    .countLabel {
+        font-size: 8px;
+    }
+
+    .venuePhoto img {
+        height: 125px;
+    }
+
+    .photoStripTrack img {
+        height: 145px;
+    }
+}
+
 </style>
 
 </head>
@@ -2666,7 +3183,7 @@ play.style.display="block";
 };
 
 /* ==========================================
-COUNTDOWN — Wedding date: October 23, 2026
+COUNTDOWN — Wedding date: October 02, 2026
 ========================================== */
 
 const target=new Date("October 02, 2026 16:00:00");
