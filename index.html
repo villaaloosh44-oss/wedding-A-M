@@ -1123,7 +1123,13 @@ opacity:.9;
 
 .countdownGlass{
 
-display:inline-block;
+display:block;
+
+width:fit-content;
+
+max-width:92%;
+
+margin:0 auto;
 
 padding:26px 22px;
 
@@ -1667,11 +1673,31 @@ width:40px;
 
 padding:14px 22px 40px;
 
+background-size:cover !important;
+
+}
+
+.countdownGlass{
+
+padding:16px 10px;
+
+background-size:cover !important;
+
 }
 
 #countdown{
 
 gap:2px;
+
+flex-wrap:wrap;
+
+row-gap:14px;
+
+}
+
+.countItem{
+
+min-width:46px;
 
 }
 
@@ -1976,7 +2002,7 @@ HERO SECTION
 
   </div> <!-- نهاية swansVideoWrap -->
 
-<div class="flowerRow reveal" style="display:flex;justify-content:center;align-items:center;gap:100px;margin-top:-200px;position:relative;z-index:1000;">
+<div class="flowerRow reveal" style="display:flex;justify-content:center;align-items:center;gap:100px;margin-top:-260px;position:relative;z-index:1000;">
     <img
         src="https://static.tildacdn.net/tild6639-3363-4136-a234-356639363561/noroot.png"
         style="width:180px;height:auto;animation:breathe 3s ease-in-out infinite;">
